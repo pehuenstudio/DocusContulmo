@@ -7,3 +7,7 @@ C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\Docu
 C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\obj\Debug\DocusContulmo.csproj.GenerateResource.Cache
 C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\obj\Debug\DocusContulmo.exe
 C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\obj\Debug\DocusContulmo.pdb
+C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\bin\Debug\DocusContulmo.exe.manifest
+C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\bin\Debug\DocusContulmo.application
+C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\obj\Debug\DocusContulmo.exe.manifest
+C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\obj\Debug\DocusContulmo.application

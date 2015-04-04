@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DocusContulmo.exe" version="1.0.0.0" publicKeyToken="7631ebb1f50ac18a" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DocusContulmo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DocusContulmo.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la 
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocusContulmo.exe" size="11776">
+      <assemblyIdentity name="DocusContulmo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Fkod8NjyPpNlO9PoIVbDsacYZnmeLSO93iiqBzDXvk4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DocusContulmo.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Rodrigo-PC\Rodrigo" issuerKeyHash="05df5ad2ac38ea46830e9c9f576b51ce3e200126" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/aqftukPCtdlrOZ9arFgTYRfVO+RDNpKZNrWU13Ejhc=</DigestValue></Reference></SignedInfo><SignatureValue>JXJ2566QsFpASanMuZG/RsoCv8/DAR/sychj6JK6xwgGHgdV5yEqbFVqQmBNh/z81UfBdSQyLn2k3h1mpc7kJ4nkyCKgY0pt1JuZqK0ddqDB+Ce7M1xFh8LyrEwXfxdc+0NH0SlBd9haXO/lZSsYNNV3/dT07+V6TR8EvyRSrTQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1VbtXHk59LjCDb7wQoe8WLE8831EF2vaSItXu8VV96qWqxUXISsCHgFYlquBbQdxwvIGOv+6pUoDgql503frZCeOmUImioriY/H3Mnuc/+40mHoo+MwSZO3gQic6dZ1JYKm6Hj4Afc6tYKYYsYWUTx9+mKt1Fa4b5fWar4U5C0E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="178ec45d53d6da644ada0c91ef545f844d60b16a7de6ac65d70a0fe9b69faafd" Description="" Url=""><as:assemblyIdentity name="DocusContulmo.exe" version="1.0.0.0" publicKeyToken="7631ebb1f50ac18a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Rodrigo-PC\Rodrigo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>heKZlHSbvS+bkxReET3F0BdYvAJeNtCRsyxHOnqDJOA=</DigestValue></Reference></SignedInfo><SignatureValue>E5DWdSA3Vk8pI7i4M2TaohCockPM48IzV1FWJ/4abP9S2ib/kb2w12G9hWqrwgW6RTnyi854c1J3dszMk8DD69knKX3GA8wIFJ1Xfg/afHjFwUdoRj35fRdZU2CZl3g1zks8chhqZEgobGpRmrgvv/JC8hd4qz5EUOc+xqRrAFQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1VbtXHk59LjCDb7wQoe8WLE8831EF2vaSItXu8VV96qWqxUXISsCHgFYlquBbQdxwvIGOv+6pUoDgql503frZCeOmUImioriY/H3Mnuc/+40mHoo+MwSZO3gQic6dZ1JYKm6Hj4Afc6tYKYYsYWUTx9+mKt1Fa4b5fWar4U5C0E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQNP0zp9Q5XZtKZ3iYAwPdUjANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQAUgBvAGQAcgBpAGcAbwAtAFAAQwBcAFIAbwBkAHIAaQBnAG8wHhcNMTUwNDA0MDExOTI0WhcNMTYwNDAzMDcxOTI0WjAvMS0wKwYDVQQDHiQAUgBvAGQAcgBpAGcAbwAtAFAAQwBcAFIAbwBkAHIAaQBnAG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANVW7Vx5OfS4wg2+8EKHvFixPPN9RBdr2kiLV7vFVfeqlqsVFyErAh4BWJargW0HccLyBjr/uqVKA4KpedN362QnjplCJoqK4mPx9zJ7nP/uNJh6KPjMEmTt4EInOnWdSWCpuh4+AH3OrWCmGLGFlE8ffpirdRWuG+X1mq+FOQtBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAIbUtqkS03Ht2p2w3qqb/2YFDiGQibGujO86YBmTNPPJsrLiYHSKAcJyMxSvkdINtdzy71qNkCmjN6wFzArsPjRfV6/9gQ5OIDRyaM9u9M9eh1Y2lfJceJStu2FtbYvsQLfpO643SbHYVgp0wzRXzGB/kXzGZvQDpxXDi1CJJ4nQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
