@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DocusContulmo
 {
-    public partial class Form1 : Form
+    public partial class Ingreso : Form
     {
-        public Form1()
+        public Ingreso()
         {
             InitializeComponent();
         }
