@@ -11,3 +11,5 @@ C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\Docu
 C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\bin\Debug\DocusContulmo.application
 C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\obj\Debug\DocusContulmo.exe.manifest
 C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\obj\Debug\DocusContulmo.application
+C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\bin\Debug\Data\DDBB.mdf
+C:\Users\Rodrigo\Dropbox\PehuenStudio\1 - Proyectos\MUNICIPALIDAD CONTULMNO\DocusContumo\DocusContulmo\DocusContulmo\bin\Debug\Data\DDBB_log.ldf

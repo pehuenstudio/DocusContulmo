@@ -16,5 +16,11 @@ namespace DocusContulmo
         {
             InitializeComponent();
         }
+
+        private void buttonBorrar_Click(object sender, EventArgs e)
+        {
+            this.textBoxRUN.Text = "";
+            this.textBoxContraseña.Text = "";
+        }
     }
 }
