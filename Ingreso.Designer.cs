@@ -40,7 +40,7 @@
             this.textBoxRUN = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.maskedTextPass = new System.Windows.Forms.MaskedTextBox();
+            this.textBoxPass = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -157,7 +157,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.textBoxRUN, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.maskedTextPass, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxPass, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(172, 117);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -184,7 +184,6 @@
             this.textBoxRUN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRUN.Location = new System.Drawing.Point(169, 11);
             this.textBoxRUN.Name = "textBoxRUN";
-            this.textBoxRUN.PasswordChar = '*';
             this.textBoxRUN.Size = new System.Drawing.Size(161, 21);
             this.textBoxRUN.TabIndex = 0;
             // 
@@ -219,14 +218,14 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(679, 380);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // maskedTextPass
+            // textBoxPass
             // 
-            this.maskedTextPass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextPass.Location = new System.Drawing.Point(169, 56);
-            this.maskedTextPass.Name = "maskedTextPass";
-            this.maskedTextPass.PasswordChar = '*';
-            this.maskedTextPass.Size = new System.Drawing.Size(161, 21);
-            this.maskedTextPass.TabIndex = 4;
+            this.textBoxPass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxPass.Location = new System.Drawing.Point(169, 56);
+            this.textBoxPass.Name = "textBoxPass";
+            this.textBoxPass.PasswordChar = '*';
+            this.textBoxPass.Size = new System.Drawing.Size(161, 21);
+            this.textBoxPass.TabIndex = 4;
             // 
             // Ingreso
             // 
@@ -269,7 +268,7 @@
         private System.Windows.Forms.TextBox textBoxRUN;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.MaskedTextBox maskedTextPass;
+        private System.Windows.Forms.TextBox textBoxPass;
 
     }
 }

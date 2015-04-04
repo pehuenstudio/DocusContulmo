@@ -22,14 +22,14 @@ namespace DocusContulmo
 
         private void buttonBorrar_Click(object sender, EventArgs e)
         {
-            this.textBoxRUN.Text = "";
-            this.maskedTextPass.Text = "";
+            textBoxRUN.Text = "";
+            textBoxPass.Text = "";
         }
 
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
-            this.MiUsuario = new Usuario(this.textBoxRUN.Text, this.maskedTextPass.Text);
-            this.MiUsuario.Validar();
+            MiUsuario = new Usuario(textBoxRUN.Text, textBoxPass.Text);
+            MiUsuario.Validar();
         }
     }
 }

@@ -54,7 +54,7 @@ namespace DocusContulmo.Clases
         {
             _tabla = new DataTable(NombreTabla);
             int contador = _adaptador.Fill(_tabla);
-            Console.Write("\nfilas afectadas= "+contador+"\n");
+            Console.Write("\nFILAS AFECTADAS = "+contador+"\n");
             return _tabla;
         }
     }

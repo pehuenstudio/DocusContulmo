@@ -46,9 +46,7 @@ namespace DocusContulmo.Clases
             MiConexion.Comando.Parameters.Add("@ID_USUARIO", SqlDbType.Int).Direction = ParameterDirection.Output;
             MiConexion.GenerarAdaptador();
           
-           
-            
-           
+                  
             
             Console.Write("RUN: "+this.RUN+"\n");
             Console.Write("Pass: "+this.Pass+"\n");
