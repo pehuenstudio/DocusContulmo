@@ -24,6 +24,8 @@ namespace DocusContulmo.Clases
         private string UltimaVisita;
         private int Estado;
        
+        Conexion MiConexion;
+        DataTable TablaUsuario;
       
 
 
@@ -35,17 +37,23 @@ namespace DocusContulmo.Clases
             this.Pass = Pass;
         }
 
-        public Boolean ValidarUsuario(){
-            Conexion MiConexion = new Conexion();
-            //MiConexion.Query = "select ID_USUARIO from USUARIOS where RUN = '16689083-7' and PASS = 'GALATEA';";
-            MiConexion.IngresarComando("select ID_USUARIO from USUARIOS where RUN = '"+this.RUN+"' and PASS = '"+this.Pass+"';");
+        public Boolean Validar(){
+            
+            MiConexion = new Conexion();
+            MiConexion.IngresarQuery("ValidarUsuario",true);
+            MiConexion.Comando.Parameters.Add("@RUN",SqlDbType.VarChar).Value = RUN;
+            MiConexion.Comando.Parameters.Add("@PASS", SqlDbType.VarChar).Value = Pass;
+            MiConexion.Comando.Parameters.Add("@ID_USUARIO", SqlDbType.Int).Direction = ParameterDirection.Output;
             MiConexion.GenerarAdaptador();
-            DataTable TablaUsuario = new DataTable("Usuario");
-            MiConexion.Apaptador.Fill(TablaUsuario);
+          
+           
+            
            
             
             Console.Write("RUN: "+this.RUN+"\n");
-            Console.Write("Pass: "+this.Pass);
+            Console.Write("Pass: "+this.Pass+"\n");
+            Console.Write("ID: " + MiConexion.Comando.Parameters["@ID_USUARIO"].Value + "\n");
+           
             return true;
         }
         

@@ -13,10 +13,11 @@ namespace DocusContulmo.Clases
         private static SqlConnection _miConexion = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Data\DDBB.mdf;Integrated Security=True");
         private SqlCommand _comando;
         private SqlDataAdapter _adaptador;
-        //private DataTable _tabla;
-        private string _query;
-
-        public Conexion() { }
+        private DataTable _tabla;
+        
+        public Conexion() {
+            _miConexion.Open();
+        }
         
         //GETTERS Y SETTERS
         public SqlCommand Comando
@@ -31,25 +32,30 @@ namespace DocusContulmo.Clases
             get { return _adaptador; }
             set { _adaptador = value; }
         }
-        public string Query
+        public DataTable Tabla
         {
-            get { return _query; }
-            set { _query = value; }
+            get { return _tabla; }
+            set { _tabla = value; }
         }
 
-        public void IngresarComando(string query)
+        public void IngresarQuery(string Query, Boolean EsProcedimiento)
         {
-            _comando = new SqlCommand(query, _miConexion);
+            _comando = new SqlCommand(Query, _miConexion);
+            if (EsProcedimiento)
+            {
+                _comando.CommandType = CommandType.StoredProcedure;
+            }
         }
         public void GenerarAdaptador()
         {
             _adaptador = new SqlDataAdapter(_comando);
         }
-       /* public DataTable GenerarTabla(string NombreTabla)
+        public DataTable GenerarTabla(string NombreTabla)
         {
             _tabla = new DataTable(NombreTabla);
-            _tabla.Columns.Add("");
+            int contador = _adaptador.Fill(_tabla);
+            Console.Write("\nfilas afectadas= "+contador+"\n");
             return _tabla;
-        }*/
+        }
     }
 }

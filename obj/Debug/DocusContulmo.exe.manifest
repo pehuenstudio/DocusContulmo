@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocusContulmo.exe" size="14336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocusContulmo.exe" size="15360">
       <assemblyIdentity name="DocusContulmo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Xpp2X5i7bupxNuhG55EbwDYjXsIT7sxAqpnitcSNdlo=</dsig:DigestValue>
+        <dsig:DigestValue>MbIrnZf3i4KT78y3dxwII31+ZJc0FoK88j2/YTL6z/I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,7 +59,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YOYbKotncn4AEuesuyNYZ2n/5v+YnAc60h3zrA/embE=</dsig:DigestValue>
+      <dsig:DigestValue>idSExLu3fe0LN1obH9jBAuIMi1CTK7r9oGX3IAMN8iQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Data\DDBB_log.ldf" size="802816" writeableType="applicationData">
@@ -68,7 +68,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Rlz/ip8m/2jeAoVa3ydKYkWTLpmMW8sJPWmgz7DZbdM=</dsig:DigestValue>
+      <dsig:DigestValue>24N4+7T/r/zXjF3TGuqHEw1UJUcXNETpvm1HJBCLYuU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DocusContulmo.exe.config" size="187">

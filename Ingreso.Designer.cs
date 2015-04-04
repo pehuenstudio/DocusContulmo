@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelError = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonBorrar = new System.Windows.Forms.Button();
             this.buttonIngresar = new System.Windows.Forms.Button();
+            this.buttonBorrar = new System.Windows.Forms.Button();
+            this.checkBoxRecordarUsuario = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxContraseña = new System.Windows.Forms.TextBox();
-            this.textBoxRUN = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.labelError = new System.Windows.Forms.Label();
+            this.textBoxRUN = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBoxRecordarUsuario = new System.Windows.Forms.CheckBox();
+            this.maskedTextPass = new System.Windows.Forms.MaskedTextBox();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -67,6 +67,20 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(333, 165);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
+            // labelError
+            // 
+            this.labelError.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelError.AutoSize = true;
+            this.labelError.Font = new System.Drawing.Font("Maiandra GD", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelError.ForeColor = System.Drawing.Color.Red;
+            this.labelError.Location = new System.Drawing.Point(3, 100);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(327, 16);
+            this.labelError.TabIndex = 3;
+            this.labelError.Text = "Aqui va el error de Ingreso";
+            this.labelError.Visible = false;
+            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -85,6 +99,18 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(327, 53);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
+            // buttonIngresar
+            // 
+            this.buttonIngresar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonIngresar.Font = new System.Drawing.Font("Maiandra GD", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonIngresar.Location = new System.Drawing.Point(166, 14);
+            this.buttonIngresar.Name = "buttonIngresar";
+            this.buttonIngresar.Size = new System.Drawing.Size(158, 25);
+            this.buttonIngresar.TabIndex = 1;
+            this.buttonIngresar.Text = "Ingresar";
+            this.buttonIngresar.UseVisualStyleBackColor = true;
+            this.buttonIngresar.Click += new System.EventHandler(this.buttonIngresar_Click);
+            // 
             // buttonBorrar
             // 
             this.buttonBorrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -97,17 +123,17 @@
             this.buttonBorrar.UseVisualStyleBackColor = true;
             this.buttonBorrar.Click += new System.EventHandler(this.buttonBorrar_Click);
             // 
-            // buttonIngresar
+            // checkBoxRecordarUsuario
             // 
-            this.buttonIngresar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonIngresar.Font = new System.Drawing.Font("Maiandra GD", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonIngresar.Location = new System.Drawing.Point(166, 14);
-            this.buttonIngresar.Name = "buttonIngresar";
-            this.buttonIngresar.Size = new System.Drawing.Size(158, 25);
-            this.buttonIngresar.TabIndex = 1;
-            this.buttonIngresar.Text = "Ingresar";
-            this.buttonIngresar.UseVisualStyleBackColor = true;
-            this.buttonIngresar.Click += new System.EventHandler(this.buttonIngresar_Click);
+            this.checkBoxRecordarUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBoxRecordarUsuario.AutoSize = true;
+            this.checkBoxRecordarUsuario.Font = new System.Drawing.Font("Maiandra GD", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRecordarUsuario.Location = new System.Drawing.Point(93, 10);
+            this.checkBoxRecordarUsuario.Name = "checkBoxRecordarUsuario";
+            this.checkBoxRecordarUsuario.Size = new System.Drawing.Size(146, 20);
+            this.checkBoxRecordarUsuario.TabIndex = 2;
+            this.checkBoxRecordarUsuario.Text = "¿Recordar Usuario?";
+            this.checkBoxRecordarUsuario.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -130,8 +156,8 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.textBoxRUN, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBoxContraseña, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.maskedTextPass, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(172, 117);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -140,34 +166,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(333, 89);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Maiandra GD", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "RUN :";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBoxContraseña
-            // 
-            this.textBoxContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxContraseña.Location = new System.Drawing.Point(169, 56);
-            this.textBoxContraseña.Name = "textBoxContraseña";
-            this.textBoxContraseña.Size = new System.Drawing.Size(161, 21);
-            this.textBoxContraseña.TabIndex = 1;
-            // 
-            // textBoxRUN
-            // 
-            this.textBoxRUN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxRUN.Location = new System.Drawing.Point(169, 11);
-            this.textBoxRUN.Name = "textBoxRUN";
-            this.textBoxRUN.Size = new System.Drawing.Size(161, 21);
-            this.textBoxRUN.TabIndex = 0;
             // 
             // label2
             // 
@@ -181,19 +179,26 @@
             this.label2.Text = "Contraseña :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelError
+            // textBoxRUN
             // 
-            this.labelError.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelError.AutoSize = true;
-            this.labelError.Font = new System.Drawing.Font("Maiandra GD", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelError.ForeColor = System.Drawing.Color.Red;
-            this.labelError.Location = new System.Drawing.Point(3, 100);
-            this.labelError.Name = "labelError";
-            this.labelError.Size = new System.Drawing.Size(327, 16);
-            this.labelError.TabIndex = 3;
-            this.labelError.Text = "Aqui va el error de Ingreso";
-            this.labelError.Visible = false;
+            this.textBoxRUN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxRUN.Location = new System.Drawing.Point(169, 11);
+            this.textBoxRUN.Name = "textBoxRUN";
+            this.textBoxRUN.PasswordChar = '*';
+            this.textBoxRUN.Size = new System.Drawing.Size(161, 21);
+            this.textBoxRUN.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Maiandra GD", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "RUN :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tableLayoutPanel1
             // 
@@ -214,17 +219,14 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(679, 380);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // checkBoxRecordarUsuario
+            // maskedTextPass
             // 
-            this.checkBoxRecordarUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBoxRecordarUsuario.AutoSize = true;
-            this.checkBoxRecordarUsuario.Font = new System.Drawing.Font("Maiandra GD", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRecordarUsuario.Location = new System.Drawing.Point(93, 10);
-            this.checkBoxRecordarUsuario.Name = "checkBoxRecordarUsuario";
-            this.checkBoxRecordarUsuario.Size = new System.Drawing.Size(146, 20);
-            this.checkBoxRecordarUsuario.TabIndex = 2;
-            this.checkBoxRecordarUsuario.Text = "¿Recordar Usuario?";
-            this.checkBoxRecordarUsuario.UseVisualStyleBackColor = true;
+            this.maskedTextPass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.maskedTextPass.Location = new System.Drawing.Point(169, 56);
+            this.maskedTextPass.Name = "maskedTextPass";
+            this.maskedTextPass.PasswordChar = '*';
+            this.maskedTextPass.Size = new System.Drawing.Size(161, 21);
+            this.maskedTextPass.TabIndex = 4;
             // 
             // Ingreso
             // 
@@ -265,9 +267,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxRUN;
-        private System.Windows.Forms.TextBox textBoxContraseña;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.MaskedTextBox maskedTextPass;
 
     }
 }

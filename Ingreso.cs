@@ -13,7 +13,7 @@ namespace DocusContulmo
 {
     public partial class Ingreso : Form
     {
-        private Usuario usuario;
+        private Usuario MiUsuario;
 
         public Ingreso()
         {
@@ -23,13 +23,13 @@ namespace DocusContulmo
         private void buttonBorrar_Click(object sender, EventArgs e)
         {
             this.textBoxRUN.Text = "";
-            this.textBoxContraseña.Text = "";
+            this.maskedTextPass.Text = "";
         }
 
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
-            this.usuario = new Usuario(this.textBoxRUN.Text, this.textBoxContraseña.Text);
-            this.usuario.ValidarUsuario();
+            this.MiUsuario = new Usuario(this.textBoxRUN.Text, this.maskedTextPass.Text);
+            this.MiUsuario.Validar();
         }
     }
 }
