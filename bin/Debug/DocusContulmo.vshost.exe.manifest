@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocusContulmo.exe" size="15360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocusContulmo.exe" size="16896">
       <assemblyIdentity name="DocusContulmo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QnLv3rezWCQNY0ZWcyvKFTLjoGlQFTXA7+0yIBHCoqc=</dsig:DigestValue>
+        <dsig:DigestValue>rNdRzYKj4mgtiQy0a1rLYYcsxT/rpCeV96D2Bjj3PaE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

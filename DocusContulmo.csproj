@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\RUN.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Ingreso.cs">
       <SubType>Form</SubType>

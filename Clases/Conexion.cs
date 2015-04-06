@@ -57,5 +57,9 @@ namespace DocusContulmo.Clases
             Console.Write("\nFILAS AFECTADAS = "+contador+"\n");
             return _tabla;
         }
+
+        public void Cerrar() {
+            _miConexion.Close();
+        }
     }
 }
